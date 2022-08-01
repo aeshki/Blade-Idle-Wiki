@@ -1,0 +1,44 @@
+/* Text color */
+
+.textSoftGray {
+    color: var(--text-softgray);
+}
+
+.textGray {
+    color: var(--text-gray);
+}
+
+
+.textBrun {
+    color: var(--text-brun);
+}
+
+.textWhite {
+    color: var(--text-white);
+}
+
+/* Size */
+
+.sizeHeader {
+    font-size: 2rem;
+}
+
+.sizeVeryBig {
+    font-size: 1.5rem;
+}
+
+.sizeBig {
+    font-size: 1.17rem;
+}
+
+.sizeBasic {
+    font-size: 1rem;
+}
+
+.sizeSmall {
+    font-size: 0.83rem;
+}
+
+.sizeVerySmall {
+    font-size: 0.67rem;
+}
