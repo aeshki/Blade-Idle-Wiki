@@ -1,0 +1,6 @@
+@keyframes rarityRainbow {
+    from, to   { color: #ff90c7; }
+    25%        { color: #a0ffc1; }
+    50%        { color: #80d4ff; }
+    75%        { color: #a0ffc1; }
+}
