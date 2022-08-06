@@ -11,6 +11,8 @@
 :root {
     --header: #0F152F;
     --backgroud: #282E48;
+    --footer: #0F152F;
+    --footer-content-copyright: #ececec;
     --category-background: #3B4963;
     --category-border: #445574;
     --category-separator: #6279A5;
@@ -61,7 +63,7 @@
 
 img { pointer-events: none; user-select: none; }
 
-body { margin-bottom: 25px; background: var(--backgroud); }
+body { min-height: 100vh; display: flex; flex-direction: column; background: var(--backgroud); }
 
 body::-webkit-scrollbar { display: none; }
 
@@ -78,7 +80,16 @@ header {
     background: var(--header);
 }
 
-main { margin: auto; width: 90% }
+main { flex-grow: 1; margin: auto; width: 90% }
+
+footer {
+    background-color: var(--footer);
+    padding: 10px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+footer .copyright { color: var(--footer-content-copyright); }
 
 section.categories { display: grid; justify-items: center; }
 
