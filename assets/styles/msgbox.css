@@ -1,0 +1,46 @@
+.msgbox {
+    min-width: 200px;
+    max-width: 500px;
+    padding: 15px;
+    margin: 15px auto 10px auto;
+    background: var(--msgbox-background);
+    border: var(--msgbox-border) 2px solid;
+    border-radius: 5px;
+}
+
+.separatorMsgbox {
+    background: var(--msgbox-separator);
+    height: 2px;
+    border-radius: 1px;
+    margin: 15px auto;
+}
+
+.msgbox .header .avatar { width: 48px; height: 48px; margin-right: 10px; }
+
+.msgbox .header {
+    color: var(--msgbox-header-text);
+    width: fit-content;
+    display: flex;
+    align-items: center;
+    background: var(--msgbox-header-background);
+    border: var(--msgbox-header-border) 2px solid;
+    border-radius: 5px;
+    padding: 5px 10px;
+}
+
+.msgbox .header .profile .info { display: flex; align-items: center; }
+
+.msgbox .header .profile .guild { margin-top: 2px; display: flex; align-items: center; }
+
+.msgbox .header .profile .guild .icon { margin-right: 3px; height: 20px; width: 20px; }
+
+.msgbox .content {
+    padding: 10px;
+    border-radius: 5px;
+    background: var(--msgbox-content-background);
+    border: var(--msgbox-content-border) 2px solid;
+}
+
+.msgbox .content p { color: var(--msgbox-content-text); }
+.msgbox .header .profile .info .titles::before { content: ', '; color: var(--msgbox-header-text); }
+.msgbox .header .profile .info .titles + span::before { content: '\00a0 '; color: var(--msgbox-header-text); }

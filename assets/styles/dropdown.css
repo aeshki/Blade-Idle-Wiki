@@ -1,0 +1,40 @@
+.dropdown { position: relative; }
+
+.dropdown label {
+    cursor: pointer;
+    user-select: none;
+    background-color: var(--dropdown-background);
+    border-radius: 10px;
+    padding: 10px;
+    transition: .2s;
+}
+
+.dropdown .content {
+    position: absolute;
+    list-style: none;
+    display: grid;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+    left: 50%;
+    top: 40px;
+    padding: 5px;
+    background-color: var(--dropdown-content-background);
+    border-radius: 5px;
+    transform: translateX(-50%);
+    transition: visibility 0s, opacity .2s linear;
+}
+
+.dropdown .content .buttonLink {
+    text-align: center;
+    text-decoration: none;
+    background: var(--dropdown-content-button-link);
+    padding: 10px;
+    border-radius: 5px;
+    transition: .2s;
+}
+
+.dropdown .content .buttonLink ~ .buttonLink { margin-top: 5px; }
+
+.dropdown input[type="checkbox"]:checked + .content { visibility: visible; opacity: 1; } 
+.dropdown input[type="checkbox"] { position: absolute; opacity: 0; height: 0px; } 
