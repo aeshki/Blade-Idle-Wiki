@@ -108,3 +108,17 @@ section.categories { display: grid; justify-items: center; }
 
 @media screen and (min-width: 2560px) { section.categories { grid-template-columns: 1fr 1fr 1fr 1fr 1fr; } }
 */
+
+
+.warningbox {
+    background-color: #686039;
+    border-left: 5px #e7c000 solid;
+    padding: 10px;
+    border-radius: 0 5px 5px 0;
+}
+
+.warningbox .headerContent { display: flex; align-items: center; justify-content: flex-start; text-transform: uppercase; }
+
+.warningbox .content { font-size: 0.83rem; margin-top: 5px; }
+
+.warningbox .date { font-size: 0.67rem; color: #e4e4e4 }
